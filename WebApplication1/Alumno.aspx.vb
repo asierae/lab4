@@ -12,7 +12,5 @@
         Label1.Text = Session("username")
     End Sub
 
-    Protected Sub LinkButton1_Click(sender As Object, e As EventArgs) Handles LinkButton1.Click
-        Response.Redirect("/TareasAlumno.aspx")
-    End Sub
+
 End Class

@@ -91,14 +91,6 @@ Control form1.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.TareasAlumno.LinkButton2">
-	<summary>
-Control LinkButton2.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
 </member><member name="F:WebApplication1.TareasAlumno.DropDownList1">
 	<summary>
 Control DropDownList1.
@@ -326,14 +318,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </member><member name="F:WebApplication1.Alumno.form1">
 	<summary>
 Control form1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:WebApplication1.Alumno.LinkButton1">
-	<summary>
-Control LinkButton1.
 </summary>
 	<remarks>
 Campo generado automáticamente.
@@ -638,14 +622,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </member><member name="F:WebApplication1.InstanciarTarea.form1">
 	<summary>
 Control form1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:WebApplication1.InstanciarTarea.LinkButton2">
-	<summary>
-Control LinkButton2.
 </summary>
 	<remarks>
 Campo generado automáticamente.
