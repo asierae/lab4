@@ -52,6 +52,7 @@ Public Class TareasAlumno
              Select tarea
             If query.Count > 0 Then
                 tbTareasAsig = query.CopyToDataTable() ''Solo con Ienumerable(of DataRow)
+                Session("tb2") = tbTareasAsig ''para instanciar y el sorting
                 GridView1.DataSource = tbTareasAsig
                 GridView1.DataBind()
             Else
@@ -119,7 +120,7 @@ Public Class TareasAlumno
         Dim x = GridView1.SelectedIndex()
         Dim tb2 = New DataTable
         tb2 = Session("tb2")
-        MsgBox(x & tb2.Rows(x).Item(0) & tb2.Rows(x).Item(3))
+
         'LabelErrors.Text = tbTareas.Rows(x).Item(4)
         Response.Redirect("/InstanciarTarea.aspx?cod=" & tb2.Rows(x).Item(0) & "&h=" & tb2.Rows(x).Item(3) & "")
 
