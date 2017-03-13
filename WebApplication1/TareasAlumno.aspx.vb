@@ -67,7 +67,8 @@ Public Class TareasAlumno
 
 
     Protected Sub DropDownList1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DropDownList1.SelectedIndexChanged
-        'Opcion Linq to dataset(la bonita)
+
+        'Opcion Linq to dataset(la buena)
         query = From tarea In tbTareas.AsEnumerable()
         Where tarea("codAsig") = DropDownList1.SelectedValue
         Select tarea
@@ -75,8 +76,11 @@ Public Class TareasAlumno
             LabelErrors.Text = ""
             tbTareasAsig = New DataTable()
             tbTareasAsig = query.CopyToDataTable() ''Solo con Ienumerable(of DataRow)
+            'Session("tbtemp") = tbTareasAsig.AsDataView ''guardo para el sorting
+            Session("tb2") = tbTareasAsig ''para el instanciar y el sorting
             GridView1.DataSource = tbTareasAsig
             GridView1.DataBind()
+
         Else
             GridView1.DataSource = Nothing
             GridView1.DataBind()
@@ -94,9 +98,8 @@ Public Class TareasAlumno
         '    tbTareasAsig.Rows.Add(foundRows(i).ItemArray)
         'Next i
 
-        Session("tbtemp") = tbTareasAsig.AsDataView ''guardo para el sorting
-        GridView1.DataSource = tbTareasAsig
-        GridView1.DataBind()
+        'GridView1.DataSource = tbTareasAsig
+        'GridView1.DataBind()
 
         'opcion chuflons(DataAdapter)
         'conectar()
@@ -113,18 +116,23 @@ Public Class TareasAlumno
 
     Protected Sub GridView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles GridView1.SelectedIndexChanged
 
-        Dim x = GridView1.SelectedIndex + 1
+        Dim x = GridView1.SelectedIndex()
+        Dim tb2 = New DataTable
+        tb2 = Session("tb2")
+        MsgBox(x & tb2.Rows(x).Item(0) & tb2.Rows(x).Item(3))
         'LabelErrors.Text = tbTareas.Rows(x).Item(4)
-        Response.Redirect("/InstanciarTarea.aspx?cod=" & tbTareas.Rows(x).Item(0) & "&h=" & tbTareas.Rows(x).Item(3) & "")
+        Response.Redirect("/InstanciarTarea.aspx?cod=" & tb2.Rows(x).Item(0) & "&h=" & tb2.Rows(x).Item(3) & "")
 
     End Sub
   
 
     Protected Sub GridView1_Sorting(sender As Object, e As GridViewSortEventArgs) Handles GridView1.Sorting
+        Dim tb2 = New DataTable
+        tb2 = Session("tb2")
+        Dim vista = tb2.AsDataView
+        vista.Sort = e.SortExpression   ''nombre de la columna y direction
 
-        Dim vista = Session("tbtemp")
-        vista.Sort = e.SortExpression    ''nombre de la columna y direction
-
+        Session("tb2") = vista.ToTable
         GridView1.DataSource = vista.ToTable 'tbTareas
         GridView1.DataBind()
     End Sub
