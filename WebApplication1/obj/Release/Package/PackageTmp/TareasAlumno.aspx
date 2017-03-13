@@ -24,7 +24,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/Profesor.aspx">Menu Alumno</a>
+          <a class="navbar-brand" href="/Alumno.aspx">Menu Alumno</a>
         </div>
     
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -56,6 +56,7 @@
         </div>
         <div id="contenido" class="col-md-9 well">
         <br />
+            <h3>Gestión de Tareas Genéricas</h3>
         <br />
         <br />
         <div  id="content" style="margin-left: 40px">

@@ -56,6 +56,10 @@
         <div id="contenido" class="col-md-9 well">
           
        
+            <h4>Inserción de Tareas Genéricas</h4>
+            <br />
+          
+       
             <asp:Label ID="LabelError" runat="server" ForeColor="Black"></asp:Label>
             <br />
        
