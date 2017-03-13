@@ -67,7 +67,7 @@ Public Class TareasAlumno
 
 
     Protected Sub DropDownList1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DropDownList1.SelectedIndexChanged
-        'Opcion Linq to dataset
+        'Opcion Linq to dataset(la bonita)
         query = From tarea In tbTareas.AsEnumerable()
         Where tarea("codAsig") = DropDownList1.SelectedValue
         Select tarea
@@ -75,7 +75,6 @@ Public Class TareasAlumno
             LabelErrors.Text = ""
             tbTareasAsig = New DataTable()
             tbTareasAsig = query.CopyToDataTable() ''Solo con Ienumerable(of DataRow)
-            Session("tbtemp") = tbTareasAsig.AsDataView ''guardo para el sorting
             GridView1.DataSource = tbTareasAsig
             GridView1.DataBind()
         Else
@@ -95,6 +94,7 @@ Public Class TareasAlumno
         '    tbTareasAsig.Rows.Add(foundRows(i).ItemArray)
         'Next i
 
+        Session("tbtemp") = tbTareasAsig.AsDataView ''guardo para el sorting
         GridView1.DataSource = tbTareasAsig
         GridView1.DataBind()
 
