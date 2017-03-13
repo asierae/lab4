@@ -6,12 +6,12 @@ Public Class TareasProfesor1
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        Session("username") = "vadillo@ehu.es" ''BORRAR!
-
+        If Session("logged") = False Then
+            Response.Redirect("Inicio.aspx?msj= Debes estar logueado para acceder")
+        ElseIf Session("role") = "A" Then
+            Response.Write("No Estas Autorizado para acceder a este reurso <a href='/Inicio.aspx'>Inicio</a>")
+            Response.End()
+        End If
     End Sub
 
-
-    Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Response.Redirect("/InsertarTarea.aspx")
-    End Sub
 End Class

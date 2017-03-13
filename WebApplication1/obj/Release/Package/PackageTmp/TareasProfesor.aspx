@@ -33,9 +33,7 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Works</a></li>
-            <li>
-            <asp:LinkButton CssClass="btn btn-default btn-outline btn-circle" ID="LinkLogout" runat="server">Logout</asp:LinkButton>
-            </li>
+            <li><a href="/LogOut.aspx">Logout</a></li>
           </ul>
           
         </div><!-- /.navbar-collapse -->
@@ -101,7 +99,8 @@
             </SelectParameters>
         </asp:SqlDataSource>
             <br />
-            <asp:Button ID="Button1" runat="server" CausesValidation="False" CssClass="btn btn-default" Text="Insertar Tarea" Width="142px" />
+            
+            <a href="/InsertarTarea.aspx" class="btn btn-default">Insertar Tarea</a>
 </div> 
     </form>
 </body>

@@ -9,13 +9,13 @@ Public Class InstanciarTarea
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         ''Control Accesp
-        'If Session("logged") = False Then
-        '    Response.Redirect("Inicio.aspx?msj= Debes estar logueado para acceder")
-        'End If
-        'If Session("tipo") = "P" Then
-        '    Response.Write("No Estas Autorizado para acceder a este reurso <a href='/Inicio.aspx'>Inicio</a>")
-        '    Response.End()
-        'End If
+        If Session("logged") = False Then
+            Response.Redirect("Inicio.aspx?msj= Debes estar logueado para acceder")
+        End If
+        If Session("role") <> "A" Then
+            Response.Write("No Estas Autorizado para acceder a este reurso <a href='/Inicio.aspx'>Inicio</a>")
+            Response.End()
+        End If
         TextBox1.Text = Session("username")
         TextBox2.Text = Request.Params("cod")
         TextBox3.Text = Request.Params("h")
@@ -42,10 +42,7 @@ Public Class InstanciarTarea
 
     End Sub
 
-    Protected Sub LinkLogout_Click(sender As Object, e As EventArgs) Handles LinkLogout.Click
-        Session.Abandon()
-        Response.Redirect("/Inicio.aspx?msj= Vuelve pronto :)")
-    End Sub
+
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 

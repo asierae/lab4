@@ -36,9 +36,7 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Works</a></li>
-            <li>
-            <asp:LinkButton CssClass="btn btn-default btn-outline btn-circle" ID="LinkLogout" runat="server">Logout</asp:LinkButton>
-            </li>
+            <li><a href="/LogOut.aspx">Logout</a></li>
           </ul>
           
         </div><!-- /.navbar-collapse -->
@@ -49,7 +47,7 @@
             <ul class="nav nav-pills nav-stacked">
                 <li class="active"><a href="/Profesor.aspx"><i class="fa fa-home fa-fw"></i>Home</a></li>
          
-                <li><a href="/TareasProfesor.aspx"><i class="fa fa-file-o fa-fw"></i>Tareas</a></li>
+                <li><a href="/TareasProfesor.aspx"><i class="fa fa-file-o fa-fw"></i>VerTareas</a></li>
                 <li><a href="/Estadisticas.aspx"><i class="fa fa-table fa-fw"></i>Estadisticas</a></li>
                 <li><a href="#"><i class="fa fa-tasks fa-fw"></i>Alumnos</a></li>
                 <li><a href="#"><i class="fa fa-calendar fa-fw"></i>Importar</a></li>
@@ -96,7 +94,7 @@
         </asp:SqlDataSource>
     
                 <h4>&nbsp;</h4>
-                <h4>Tiempo Estimado de cada Tarea Vs Tiempo Realizado en la Tarea por el Alumno</h4>
+                <h4>Tiempo Estimado de cada Tarea Vs Tiempo Realizado en la Tarea por el Alumno seleccionado</h4>
                 <br />
                 <asp:Chart ID="Chart2" runat="server" DataSourceID="SqlDataSource1">
                     <Series>
@@ -110,7 +108,7 @@
                 </asp:Chart>
                 <br />
                 <br />
-                <h4>Todas las Tareas de la asignatura que más horas se le han dedicado</h4>
+                <h4>Todas las Tareas de la asignatura que más horas se le han dedicado de todos los alumnos de la asignatura</h4>
                 <br />
                 <asp:Chart ID="Chart3" runat="server" DataSourceID="SqlDataSource4">
                     <Series>

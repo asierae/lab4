@@ -16,25 +16,48 @@
 
 
     <form id="form1" runat="server">
-     <div class="container">
-    <div class="row">
+              <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/Profesor.aspx">Menu Profesor</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="/LogOut.aspx">Logout</a></li>
+          </ul>
+          
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+        <div class="row">
         <div class="col-md-3">
             <ul class="nav nav-pills nav-stacked">
-                <li class="active"><a href="#"><i class="fa fa-home fa-fw"></i>Home</a></li>
-                <li>
-                    <asp:LinkButton ID="LinkButton1" CssClass="fa fa-list-alt fa-fw" runat="server">Asignaturas</asp:LinkButton>
-                </li>
-                <li><a href="/TareasProfesor.aspx"><i class="fa fa-file-o fa-fw"></i>Tareas</a></li>
+                <li class="active"><a href="/Profesor.aspx"><i class="fa fa-home fa-fw"></i>Home</a></li>
+         
+                <li><a href="/TareasProfesor.aspx"><i class="fa fa-file-o fa-fw"></i>VerTareas</a></li>
                 <li><a href="/Estadisticas.aspx"><i class="fa fa-table fa-fw"></i>Estadisticas</a></li>
-                <li><a href="#"><i class="fa fa-tasks fa-fw"></i>Alumnos</a></li>
+                <li><a href="/InsertarTarea.aspx"><i class="fa fa-tasks fa-fw"></i>Insertar tarea</a></li>
                 <li><a href="#"><i class="fa fa-calendar fa-fw"></i>Importar</a></li>
                 <li><a href="#"><i class="fa fa-book fa-fw"></i>Exportar</a></li>
-                <li><a href="#"><i class="fa fa-pencil fa-fw"></i>Nuevo</a></li>
-                <li><a href="#"><i class="fa fa-cogs fa-fw"></i>Settings</a></li>
+                <li><a href="#"><i class="fa fa-pencil fa-fw"></i>Opcion1</a></li>
+                <li><a href="#"><i class="fa fa-cogs fa-fw"></i>Opcion2</a></li>
             </ul>
         </div>
         <div id="contenido" class="col-md-9 well">
-            Bienvenido Session("username")
+          
+            Bienvenido <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
         </div>
     </div>
     </form>

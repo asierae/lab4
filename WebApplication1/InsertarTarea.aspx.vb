@@ -8,7 +8,13 @@ Public Class InsertarTarea
     Dim tbTareas As DataTable
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        Session("username") = "vadillo@ehu.es"
+        If Session("logged") = False Then
+            Response.Redirect("/Inicio.aspx")
+        End If
+        If Session("role") <> "P" Then
+            Response.Write("No Estas Autorizado para acceder a este reurso <a href='/Inicio.aspx'>Inicio</a>")
+            Response.End()
+        End If
     End Sub
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

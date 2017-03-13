@@ -6,7 +6,7 @@ WebApplication1
 </name>
 </assembly>
 <members>
-<member name="F:WebApplication1.TareasProfesor1.form1">
+<member name="F:WebApplication1.LogOut_aspx.form1">
 	<summary>
 Control form1.
 </summary>
@@ -14,9 +14,9 @@ Control form1.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.TareasProfesor1.LinkLogout">
+</member><member name="F:WebApplication1.TareasProfesor1.form1">
 	<summary>
-Control LinkLogout.
+Control form1.
 </summary>
 	<remarks>
 Campo generado automáticamente.
@@ -49,14 +49,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </member><member name="F:WebApplication1.TareasProfesor1.SqlDataSource2">
 	<summary>
 Control SqlDataSource2.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:WebApplication1.TareasProfesor1.Button1">
-	<summary>
-Control Button1.
 </summary>
 	<remarks>
 Campo generado automáticamente.
@@ -99,9 +91,9 @@ Control form1.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.TareasAlumno.LinkLogout">
+</member><member name="F:WebApplication1.TareasAlumno.LinkButton2">
 	<summary>
-Control LinkLogout.
+Control LinkButton2.
 </summary>
 	<remarks>
 Campo generado automáticamente.
@@ -158,14 +150,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </member><member name="F:WebApplication1.Estadisticas_aspx.form1">
 	<summary>
 Control form1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:WebApplication1.Estadisticas_aspx.LinkLogout">
-	<summary>
-Control LinkLogout.
 </summary>
 	<remarks>
 Campo generado automáticamente.
@@ -246,14 +230,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </member><member name="F:WebApplication1.InsertarTarea.form1">
 	<summary>
 Control form1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:WebApplication1.InsertarTarea.LinkLogout">
-	<summary>
-Control LinkLogout.
 </summary>
 	<remarks>
 Campo generado automáticamente.
@@ -667,9 +643,9 @@ Control form1.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.InstanciarTarea.LinkLogout">
+</member><member name="F:WebApplication1.InstanciarTarea.LinkButton2">
 	<summary>
-Control LinkLogout.
+Control LinkButton2.
 </summary>
 	<remarks>
 Campo generado automáticamente.
@@ -787,9 +763,9 @@ Control form1.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApplication1.TareasProfesor.LinkButton1">
+</member><member name="F:WebApplication1.TareasProfesor.Label1">
 	<summary>
-Control LinkButton1.
+Control Label1.
 </summary>
 	<remarks>
 Campo generado automáticamente.

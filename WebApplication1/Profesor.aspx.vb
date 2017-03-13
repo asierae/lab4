@@ -10,7 +10,7 @@
             Response.End()
 
         End If
-
+        Label1.Text = Session("username")
 
     End Sub
 

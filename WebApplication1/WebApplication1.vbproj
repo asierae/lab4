@@ -91,11 +91,14 @@
     <Content Include="Home.aspx" />
     <Content Include="InsertarTarea.aspx" />
     <Content Include="InstanciarTarea.aspx" />
+    <Content Include="LogOut.aspx" />
     <Content Include="Registro.aspx" />
     <Content Include="Profesor.aspx" />
     <Content Include="TareasAlumno.aspx" />
     <Content Include="TareasProfesor.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Inicio.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -146,6 +149,13 @@
     </Compile>
     <Compile Include="InstanciarTarea.aspx.vb">
       <DependentUpon>InstanciarTarea.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="LogOut.aspx.designer.vb">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogOut.aspx.vb">
+      <DependentUpon>LogOut.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Menu.Master.designer.vb">

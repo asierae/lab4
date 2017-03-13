@@ -36,14 +36,27 @@
             <li><a href="#">Works</a></li>
             <li><a href="#">News</a></li>
             <li><a href="#">Contact</a></li>
-            <li>
-            <asp:LinkButton CssClass="btn btn-default btn-outline btn-circle" ID="LinkLogout" runat="server">Logout</asp:LinkButton>
-            </li>
+            <li><a href="/LogOut.aspx">Logout</a></li>
           </ul>
           
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->
     </nav><!-- /.navbar -->
+                <div class="row">
+        <div class="col-md-3">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#"><i class="fa fa-home fa-fw"></i>Home</a></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton2" CssClass="fa fa-list-alt fa-fw" runat="server">Tareas Genéricas</asp:LinkButton>
+                </li>
+                <li><a href="#"><i class="fa fa-file-o fa-fw"></i>Asignaturas</a></li>
+                <li><a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>Tareas Propias</a></li>
+                <li><a href="#"><i class="fa fa-table fa-fw"></i>Grupos</a></li>
+                <li><a href="#"><i class="fa fa-tasks fa-fw"></i>Etc</a></li>
+
+            </ul>
+        </div>
+        <div id="contenido" class="col-md-9 well">
         <br />
         <br />
         <br />
@@ -78,6 +91,8 @@
                 <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
             </asp:GridView>
         </div>
+            </div>
+                    </div>
     </form>
 
 </body>

@@ -14,15 +14,43 @@
 </head>
 <body>
        <form id="form1" runat="server">
+               <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/Profesor.aspx">Menu Alumno</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="/LogOut.aspx">Logout</a></li>
+          </ul>
+          
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
      <div class="container">
     <div class="row">
         <div class="col-md-3">
             <ul class="nav nav-pills nav-stacked">
                 <li class="active"><a href="#"><i class="fa fa-home fa-fw"></i>Home</a></li>
                 <li>
-                    <asp:LinkButton ID="LinkButton1" CssClass="fa fa-list-alt fa-fw" runat="server">Asignaturas</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton1" CssClass="fa fa-list-alt fa-fw" runat="server">Tareas Genéricas</asp:LinkButton>
                 </li>
-                <li><a href="#"><i class="fa fa-file-o fa-fw"></i>Tareas Genéricas</a></li>
+                <li><a href="#"><i class="fa fa-file-o fa-fw"></i>Asignaturas</a></li>
                 <li><a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>Tareas Propias</a></li>
                 <li><a href="#"><i class="fa fa-table fa-fw"></i>Grupos</a></li>
                 <li><a href="#"><i class="fa fa-tasks fa-fw"></i>Etc</a></li>
