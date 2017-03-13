@@ -6,15 +6,7 @@ WebApplication1
 </name>
 </assembly>
 <members>
-<member name="F:WebApplication1.LogOut_aspx.form1">
-	<summary>
-Control form1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:WebApplication1.TareasProfesor1.form1">
+<member name="F:WebApplication1.TareasProfesor1.form1">
 	<summary>
 Control form1.
 </summary>
@@ -742,6 +734,14 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </member><member name="F:WebApplication1.TareasProfesor.Label1">
 	<summary>
 Control Label1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication1.LogOut_aspx.form1">
+	<summary>
+Control form1.
 </summary>
 	<remarks>
 Campo generado automáticamente.

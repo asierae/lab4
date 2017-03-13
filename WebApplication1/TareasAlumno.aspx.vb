@@ -67,7 +67,7 @@ Public Class TareasAlumno
 
 
     Protected Sub DropDownList1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DropDownList1.SelectedIndexChanged
-
+        'Opcion Linq to dataset
         query = From tarea In tbTareas.AsEnumerable()
         Where tarea("codAsig") = DropDownList1.SelectedValue
         Select tarea
@@ -84,7 +84,21 @@ Public Class TareasAlumno
             LabelErrors.Text = "No Tienes tareas de esta Asignatura"
         End If
 
-        'opcion chuflons
+        ''opcion not bad(FILTER)
+        'Dim expression As String
+        'expression = "CodAsig='" & DropDownList1.SelectedValue & "'"
+        'Dim foundRows() As DataRow
+        'foundRows = tbTareas.Select(expression)
+
+        'Dim i As Integer
+        'For i = 0 To foundRows.GetUpperBound(0)
+        '    tbTareasAsig.Rows.Add(foundRows(i).ItemArray)
+        'Next i
+
+        GridView1.DataSource = tbTareasAsig
+        GridView1.DataBind()
+
+        'opcion chuflons(DataAdapter)
         'conectar()
         'dapt = New SqlDataAdapter("SELECT * FROM TareasGenericas WHERE CodAsig='" & DropDownList1.SelectedValue & "'", conexion)
         'dst = New DataSet()
